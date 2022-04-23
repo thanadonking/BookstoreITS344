@@ -44,8 +44,7 @@
 			
 										$query="select * from category ";
 			
-										//$res=mysqli_query($conn,$query);
-										$res=mysqli_query($query);
+										$res=mysqli_query($conn,$query);
 											
 										while($row=mysqli_fetch_assoc($res))
 											{
@@ -53,6 +52,7 @@
 												//pass catid not catnm
 											}
 			
+											mysqli_close($conn);
 								?>
 				</ul>
 			</li>

@@ -11,7 +11,9 @@ $config = array(
     'pw' => $password,
     'db' => $db 
 );
-$conn = mysqli_connect($_server, $username, $password, $db);
+//$conn = mysqli_connect($_server, $username, $password, $db);
+$conn = mysqli_connect("us-cdbr-east-05.cleardb.net", "bcc413a6fa3945 
+", "409fbe50", "heroku_0dae6e1a1d7c0b9");
 //$conn=mysqli_connect("localhost","root","","book_store")or die("Can't Connect...");
 	
 ?>

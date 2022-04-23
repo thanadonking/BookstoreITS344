@@ -11,7 +11,7 @@ $config = array(
     'pw' => $password,
     'db' => $db 
 );
-//$conn = mysqli_connect($_server, $username, $password, $db);
+$conn = mysqli_connect($_server, $username, $password, $db);
 //$conn=mysqli_connect("localhost","root","","book_store")or die("Can't Connect...");
 	
 ?>

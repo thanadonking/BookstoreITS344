@@ -8,7 +8,7 @@ require('includes/config.php');
 	
 	$cat=$_GET['catid'];
 	
-	$totalq="select count(*) \"total\" from book where b_subcat='$cat'";
+	$totalq="select count(*) \"total\" from book where b_cat='$cat'";
 	
 	$totalres=mysqli_query($conn,$totalq) or die("Can't Execute Query...");
 	$totalrow=mysqli_fetch_assoc($totalres);

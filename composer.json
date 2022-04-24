@@ -1,6 +1,7 @@
 {
   "require": {
-    "ext-mysql": "*"
+    "ext-mysql": "*",
+    "j7mbo/twitter-api-php": "^1.0"
   },
    "require": {
       "ext-gettext": "*"

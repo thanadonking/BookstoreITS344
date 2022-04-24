@@ -46,8 +46,15 @@
 								{	
 									echo 'to our Gamestore';
 								}
-								$url = 'https://api.twitter.com/1.1/search/tweets.json';
-$getfield = '?q=#nerd';
+								$settings = array(
+    'oauth_access_token' => "564727233-BIJt6XQyPU9DDzQLleCD5inf6rutvV1InX0y5CaZ",
+    'oauth_access_token_secret' => "dbhs5j6ljMHG9WxNoGM9eL8uwkaeDbq5yeY0WGvrLmrlS
+",
+    'consumer_key' => "zV2hu07M4JhoUIiwcsCkgl44a",
+    'consumer_secret' => "nEVxuyswPWnb2fC5G1upoejLPD8F0UnkwTxp4x8VPQWcqrZDwi"
+	
+	$url = 'https://api.twitter.com/1.1/search/tweets.json';
+$getfield = '?q=#books';
 $requestMethod = 'GET';
 
 $twitter = new TwitterAPIExchange($settings);
@@ -56,6 +63,7 @@ $response = $twitter->setGetfield($getfield)
     ->performRequest();
 
 var_dump(json_decode($response));
+);
 							?>
 							</h1>
 							<div class="entry">

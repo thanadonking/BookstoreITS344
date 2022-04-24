@@ -47,9 +47,8 @@
 								}
 								require_once('TwitterAPIExchange.php');
 								$settings = array(
-    'oauth_access_token' => "564727233-BIJt6XQyPU9DDzQLleCD5inf6rutvV1InX0y5CaZ",
-    'oauth_access_token_secret' => "dbhs5j6ljMHG9WxNoGM9eL8uwkaeDbq5yeY0WGvrLmrlS
-",
+    'oauth_access_token' => "564727233-YOzYJUPrbQ4qz3MiefRMoziyn52rbXMgTP4eeA5r",
+    'oauth_access_token_secret' => "5W7CLxPgzWJxleXyKQTLNUaR8XTFrB9uKxnu0EyhciXXJ",
     'consumer_key' => "zV2hu07M4JhoUIiwcsCkgl44a",
     'consumer_secret' => "nEVxuyswPWnb2fC5G1upoejLPD8F0UnkwTxp4x8VPQWcqrZDwi");
 	

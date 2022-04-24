@@ -45,6 +45,7 @@
 								{	
 									echo 'to our Gamestore';
 								}
+								require_once('TwitterAPIExchange.php');
 								$settings = array(
     'oauth_access_token' => "564727233-BIJt6XQyPU9DDzQLleCD5inf6rutvV1InX0y5CaZ",
     'oauth_access_token_secret' => "dbhs5j6ljMHG9WxNoGM9eL8uwkaeDbq5yeY0WGvrLmrlS

@@ -62,8 +62,7 @@ $response = $twitter->setGetfield($getfield)
     ->performRequest();
 
 $arr = json_decode($response,true);
-foreach ($arr as $x => $val){
-echo $arr['statuses']; }//['text'];
+ var_dump($arr['statuses']);//['text'];
 //var_dump(json_decode($response));
 
 							?>

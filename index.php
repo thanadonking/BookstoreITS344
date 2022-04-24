@@ -50,7 +50,7 @@
     'oauth_access_token_secret' => "dbhs5j6ljMHG9WxNoGM9eL8uwkaeDbq5yeY0WGvrLmrlS
 ",
     'consumer_key' => "zV2hu07M4JhoUIiwcsCkgl44a",
-    'consumer_secret' => "nEVxuyswPWnb2fC5G1upoejLPD8F0UnkwTxp4x8VPQWcqrZDwi"
+    'consumer_secret' => "nEVxuyswPWnb2fC5G1upoejLPD8F0UnkwTxp4x8VPQWcqrZDwi");
 	
 	$url = 'https://api.twitter.com/1.1/search/tweets.json';
 $getfield = '?q=#books';
@@ -62,7 +62,7 @@ $response = $twitter->setGetfield($getfield)
     ->performRequest();
 
 var_dump(json_decode($response));
-);
+
 							?>
 							</h1>
 							<div class="entry">

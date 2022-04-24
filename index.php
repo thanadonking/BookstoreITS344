@@ -63,9 +63,10 @@ $response = $twitter->setGetfield($getfield)
 
 $arr = json_decode($response,true);
 foreach($arr['statuses'] as $tweets) {
+	echo "<br>";
+	echo "<br>";
     echo $tweets['text'] . '<br />';
 	echo "\r\n";
-	echo "<br>";
 }
  
  //var_dump($arr['statuses']);

@@ -91,7 +91,12 @@
 																<td>: </td>
 																<td align="left">'.$row['b_price'].'</td>
 															</tr>
-
+															
+															<tr>
+																<td align="right">  Sales</td>
+																<td>: </td>
+																<td align="left">'.$row['Sell_Count'].'</td>
+															</tr>
 														</table>
 										
 														
@@ -130,7 +135,7 @@
 												 
 												 if(isset($_SESSION['status']))
 												 {
-													echo ' <td><a href="process_cart.php?nm='.$row['b_nm'].'&id='.$row['b_id'].'&cat='.$_GET['cat'].'&rate='.$row['b_price'].'&count='.'">
+													echo ' <td><a href="process_cart.php?nm='.$row['b_nm'].'&id='.$row['b_id'].'&cat='.$_GET['cat'].'&rate='.$row['b_price'].'&count='.$row['Sell_Count'].'">
 														<img src="images/addcart.jpg">
 													</a></td>';
 												}

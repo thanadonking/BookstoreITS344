@@ -61,7 +61,9 @@ $response = $twitter->setGetfield($getfield)
     ->buildOauth($url, $requestMethod)
     ->performRequest();
 
-var_dump(json_decode($response));
+$arr = json_decode($response,true);
+echo $arr['statuses']['text'];
+//var_dump(json_decode($response));
 
 							?>
 							</h1>

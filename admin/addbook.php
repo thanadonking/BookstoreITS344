@@ -33,11 +33,11 @@ require('includes/config.php');
 	<!-- start content -->
 	<div id="content">
 		<div class="post" style="margin-left:100px">
-			<h1 class="title" >Add Game</h1>
+			<h1 class="title" >Add Book</h1>
 			<div class="entry" >
 				<form action='process_addbook.php' method='POST' enctype="multipart/form-data">
 				
-						<br><b>Game Name:</b><br>
+						<br><b>Book Name:</b><br>
 						<input type='text' name='name' size='40'>
 						<br><br>
 						

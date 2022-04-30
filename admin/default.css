@@ -356,7 +356,7 @@ input, textarea, select {
 #footer-wrap {
 	width: 860px;
 	height: 64px;
-	margin: 200px 400px 500px 250px;
+	margin: 200px 0px 500px 700px;
 	background: url(images/img04.jpg) no-repeat left top;
 }
 

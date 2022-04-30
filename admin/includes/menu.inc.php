@@ -11,7 +11,7 @@
 			?>
 			
 			<li><a href="category.php">Category</a></li>
-			<li><a href="all_book.php">Games</a></li>
+			<li><a href="all_book.php">Books</a></li>
 			<li class="last"><a href="contact.php">Contact</a></li>
 			<li class="current_page_item"><a href="index.php">Home</a></li>
 			

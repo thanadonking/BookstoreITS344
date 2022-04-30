@@ -55,7 +55,7 @@ Description: A two-column, fixed-width and lightweight template ideal for 1024x7
 				
 					<table border='1' WIDTH='100%'>
 						<tr>
-						<td colspan="7"><a href="addbook.php">Add New Book</a></td>
+						<td colspan="7"><a href="addbook.php">Add New Game</a></td>
 						</tr>
 						<tr>
 <td WIDTH='10%' style="color:#6495ed"><b><u>NO</u></b></td>

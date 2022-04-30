@@ -32,7 +32,7 @@
 							<h1 class="title">Library</h1>
 							<div class="entry"> 
 						
-							<pre>Current Books<?php
+							<pre>Lmao this will be our library, but try to beautify the web ffs<?php
 								//print_r($_SESSION) Uncomment to understand variables
 							?></pre>
 						

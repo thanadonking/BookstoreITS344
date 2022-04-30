@@ -162,7 +162,8 @@ input, textarea, select {
 #logo {
 	width: 400px;
 	height: 300px;
-	margin-left: 410px;
+	margin-left: 450px;
+	margin-top:100px;
 	background: url(upload_image/gif.gif) no-repeat left top;
 }
 

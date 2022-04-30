@@ -43,37 +43,44 @@
 								}
 								else
 								{	
-									echo 'to our Gamestore';
+									echo 'to our Bookstore';
 								}
-								require_once('TwitterAPIExchange.php');
-								$settings = array(
-    'oauth_access_token' => "564727233-YOzYJUPrbQ4qz3MiefRMoziyn52rbXMgTP4eeA5r",
-    'oauth_access_token_secret' => "5W7CLxPgzWJxleXyKQTLNUaR8XTFrB9uKxnu0EyhciXXJ",
-    'consumer_key' => "zV2hu07M4JhoUIiwcsCkgl44a",
-    'consumer_secret' => "nEVxuyswPWnb2fC5G1upoejLPD8F0UnkwTxp4x8VPQWcqrZDwi");
-	
-	$url = 'https://api.twitter.com/1.1/search/tweets.json';
-$getfield = '?q=#books';
-$requestMethod = 'GET';
-
-$twitter = new TwitterAPIExchange($settings);
-$response = $twitter->setGetfield($getfield)
-    ->buildOauth($url, $requestMethod)
-    ->performRequest();
-
-$arr = json_decode($response,true);
-foreach($arr['statuses'] as $tweets) {
-	echo "<br>";
-	echo "<br>";
-    echo $tweets['text'] . '<br />';
-	echo "\r\n";
-}
- 
- //var_dump($arr['statuses']);
-//var_dump(json_decode($response));
+				
+								
 
 							?>
 							</h1>
+							<h3>Interesting #Book tweets of the day</h3>
+							<h5> <?php
+							require_once('TwitterAPIExchange.php');
+								$settings = array(
+ 							   'oauth_access_token' => "564727233-YOzYJUPrbQ4qz3MiefRMoziyn52rbXMgTP4eeA5r",
+   							 'oauth_access_token_secret' => "5W7CLxPgzWJxleXyKQTLNUaR8XTFrB9uKxnu0EyhciXXJ",
+    							'consumer_key' => "zV2hu07M4JhoUIiwcsCkgl44a",
+   							 'consumer_secret' => "nEVxuyswPWnb2fC5G1upoejLPD8F0UnkwTxp4x8VPQWcqrZDwi");
+	
+							$url = 'https://api.twitter.com/1.1/search/tweets.json';
+							$getfield = '?q=#books';
+							$requestMethod = 'GET';
+
+
+							$twitter = new TwitterAPIExchange($settings);
+							$response = $twitter->setGetfield($getfield)
+   								 ->buildOauth($url, $requestMethod)
+    								->performRequest();
+
+							$arr = json_decode($response,true);
+							foreach($arr['statuses'] as $tweets) {
+								echo "<br>";
+								echo "<br>";
+    							echo $tweets['text'] . '<br />';
+							echo "\r\n";
+							}
+ 
+ 							//var_dump($arr['statuses']);
+							//var_dump(json_decode($response));
+							?>
+							</h5>
 							<div class="entry">
 						
 							</div>
